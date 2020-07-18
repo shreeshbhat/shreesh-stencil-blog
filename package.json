@@ -1,0 +1,54 @@
+{
+  "name": "shreesh-blog",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Shreesh's blog",
+  "scripts": {
+    "blog": "tsc --skipLibCheck --p ./scripts && node ./scripts/blog",
+    "debug-blog": "node --inspect-brk=9229 ./scripts/blog",
+    "build": "npm run blog && stencil build --prerender",
+    "start": "stencil build --dev --watch --serve",
+    "generate": "stencil generate",
+    "serve": "stencil build --dev --watch"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.15.0",
+    "@stencil/helmet": "^0.3.2",
+    "@stencil/sass": "^1.3.2",
+    "@stencil/store": "^1.3.0",
+    "@stencil/utils": "0.0.5",
+    "@types/glob": "^7.1.2",
+    "@types/marked": "^1.1.0",
+    "@types/prismjs": "^1.16.1",
+    "chalk": "^4.1.0",
+    "copy-text-to-clipboard": "^2.2.0",
+    "cross-fetch": "^3.0.5",
+    "dotenv": "^8.2.0",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "ionicons": "^5.1.2",
+    "marked": "^1.1.0",
+    "natives": "^1.1.6",
+    "prismic-javascript": "^2.7.1",
+    "prismjs": "^1.20.0",
+    "remark": "^12.0.0",
+    "rollup-plugin-dotenv": "^0.3.0",
+    "stencil-router-v2": "^0.5.0",
+    "typedoc": "^0.17.8",
+    "workbox-build": "4.3.1"
+  },
+  "author": "Ionic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/capacitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ionic-team/capacitor"
+  },
+  "resolutions": {
+    "natives": "1.1.3"
+  },
+  "homepage": "https://github.com/ionic-team/capacitor"
+}

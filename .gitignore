@@ -1,0 +1,9 @@
+scripts/*.js
+node_modules/
+.DS_Store
+www/
+.env
+dist/docs.json
+src/assets/docs-content
+src/assets/docs-structure.json
+dist/
