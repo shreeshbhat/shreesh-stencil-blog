@@ -5,7 +5,9 @@ blog-page, blog-post {
   display: block;
   background-color: var(--body-bg-color);
   height: 100%;
-
+  padding-bottom: 70px;
+  padding-top: 50px;
+  
   .ui-heading {
     font-family: var(--f-family-text);
   }
@@ -38,7 +40,6 @@ blog-page, blog-post {
 
 .blog-posts {
   margin: 0 auto;
-  padding-bottom: 70px;
   max-width: 830px;
 
   &__heading {
