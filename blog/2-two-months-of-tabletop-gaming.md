@@ -2,6 +2,7 @@
 title: Two months of tabletop gaming
 date: 2019-08-25 08:00:00
 tags: ['Tabletop', 'Gaming']
+preview: Picking up different beginner friendly tabletop games and explaining my thought process for two players.
 ---
 I have been playing modern tabletop games for the past 2 months with my partner. My partner is not particularly into video games. I thought of trying out modern tabletop games for a change. After browsing [Board Game Geek](https://boardgamegeek.com/) (BGG) and watching a bunch of YouTube videos of [Game Night](https://www.youtube.com/user/boardgamegeektv/playlists) & [Whil Wheaton's Tabletop](https://www.youtube.com/playlist?list=PL7atuZxmT956cWFGxqSyRdn6GWhBxiAwE), I realized there are thousands of board games & card games with interesting themes and mechanics.
 <!--more-->

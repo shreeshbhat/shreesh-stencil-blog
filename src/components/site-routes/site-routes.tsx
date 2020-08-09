@@ -41,6 +41,10 @@ export class SiteRoutes {
           <Route path={match('/blog/:slug')} render={({ slug }) => {
             return <blog-post slug={slug} />
           }} />
+
+          <Route path={match('/about', { exact: true })} render={() => {
+            return <site-about />
+          }} />
         </Router.Switch>
       </Host>
     );

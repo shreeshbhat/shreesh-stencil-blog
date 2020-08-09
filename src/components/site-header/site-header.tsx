@@ -16,9 +16,7 @@ export class SiteHeader {
             <a href="/" aria-label="Go to homepage">Shreesh.dev</a>{Build.isBrowser? getRandomEmoji() : null}
           </h1>
           <ul class="nav">
-            <li class="nav-item nav-item-active"><a href="/">Home</a></li>
             <li class="nav-item"><a href="/blog/">Blog</a></li>
-            <li class="nav-item"><a href="/about/">About</a></li>
           </ul>
         </header>
       </Host>

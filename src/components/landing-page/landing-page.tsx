@@ -12,8 +12,31 @@ export class LandingPage {
     return (
       <Host>
         <MetaHead />
-        <p>Hi! I'm Shreesh. I love building User Interfaces.</p>
-        <p>You can check out my <a href="https://github.com/shreeshbhat">GitHub</a> or reach out to me on <a href="https://www.twitter.com/shreeshbhat">Twitter</a>.</p>
+        <div class="image-wrapper">
+          <img class="profile-image" src="/assets/img/profile.svg" alt="An illustration of a standing person facing right wearing red jacket, white t-shirt, and blue jeans." />
+        </div>
+        <div class="text-wrapper">
+          <p>
+            Hi, I'm Shreesh Bhat, a Senior Software Engineer at Manhattan
+            Associates, where I love building User Interfaces and framework to
+            generate UIs.
+            <br />
+            My pronouns are they/their.
+          </p>
+          <p>
+            I care about performance, inclusive design, and compassionate coding.
+          </p>
+          <p>
+            In my spare time, you will often find me playing video games, cooking,
+            listening to Opeth, table top gaming with my partner, or working on{" "}
+            <a href="https://github.com/shreeshbhat/strike-off">Strike off</a>.
+          </p>
+          <p>
+            You can check out my{" "}
+            <a href="https://github.com/shreeshbhat">GitHub</a> or reach out to me
+            on <a href="https://www.twitter.com/shreeshbhat">Twitter</a>.
+          </p>
+        </div>
       </Host>
     );
   }
@@ -36,8 +59,8 @@ const MetaHead = () => (
     <meta name="twitter:creator" content="shreeshbhat" />
     <meta name="twitter:title" content="Build cross-platform apps with web technologies" />
     <meta name="twitter:description" content="Build cross-platform apps with web technologies" />
-    <meta name="twitter:image" content="https://capacitorjs.com/assets/img/og.png" />
-    <meta property="og:image" content="https://capacitorjs.com/assets/img/og.png" />
-    <meta property="og:url" content="https://capacitorjs.com/" />
+    <meta name="twitter:image" content="https://shreesh.dev/assets/img/profile.svg" />
+    <meta property="og:image" content="https://shreesh.dev/assets/img/profile.svg" />
+    <meta property="og:url" content="https://shreesh.dev/" />
   </Helmet>
 )

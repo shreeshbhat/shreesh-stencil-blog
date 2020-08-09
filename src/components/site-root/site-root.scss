@@ -114,8 +114,6 @@ document-component {
 
 .app {
   height: 100%;
-  //max-width: 1080px;
-  //margin: auto;
 }
 
 ::selection {
@@ -148,8 +146,11 @@ html, body {
 body {
   --body-bg-color: var(--slate);
   --item-bg-color: var(--dark-blue);
-  --p-text-size: clamp(1rem, 0.5rem + 1vw, 1.4rem);
-  --code-text-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
+  --h1-text-size: clamp(1.4rem, 3vw, 2.4rem);
+  --h2-text-size: clamp(1.4rem, calc(0.5rem + 2vw), 2.2rem);
+  --p-text-size: clamp(1rem, 0.5rem + 1vw, 1.6rem);
+  --code-text-size: clamp(1rem, 0.5rem + 1vw, 1.4rem);
+  --desc-text-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
   background-color: var(--body-bg-color);
 }
 
@@ -159,20 +160,29 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-a[href] {
+a {
   color: var(--goldenyellow);
   text-decoration: none;
+  outline: none;
+  outline-offset: 0;
+  border-bottom: 2px solid currentColor;
+  font-weight: 600;
 }
-a[href]:hover, a[href]:focus {
-  text-decoration: underline;
-}
-a[href]:visited {
+a:visited {
   color: var(--goldenyellow);
+}
+a:hover, a:focus {
+  outline-offset: 0;
+  outline: double 5px #e4b067;
+  color: #1f190a;
+  background-color: #e4b067;
+  border-bottom: none;
 }
 
 p {
   color: var(--light-grey);
   font-size: var(--p-text-size);
+  line-height: 1.5;
 }
 
 blockquote {

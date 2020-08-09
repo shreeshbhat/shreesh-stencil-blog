@@ -14,13 +14,16 @@ h1 {
   display: block;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
+  font-size: var(--h1-text-size);
+  white-space: nowrap;
 }
 
 .home a {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: var(--h1-text-size);
   margin: auto;
   margin-bottom: 18px;
   margin-right: 13px;
+  border-bottom: 3px solid currentColor;
 }
 
 .nav {
@@ -33,22 +36,35 @@ h1 {
 
 .nav-item {
   display: inline-block;
-  margin-bottom: 1.67em;
-  margin-right: 2vw;
-  margin-top: auto;
+  margin: auto;
+  margin-right: 4vw;
 }
 
 a {
   font-size: var(--p-text-size);
 }
 
-a[href] {
+li a {
+  padding-bottom: 4px;
+  border-bottom: 3px solid currentColor;
+}
+
+a {
   color: var(--goldenyellow);
   text-decoration: none;
+  outline: none;
+  outline-offset: 0;
+  border-bottom: 2px solid currentColor;
+  font-weight: 700;
+  /* transition: background-color 300ms ease, box-shadow 300ms ease, outline 300ms ease, box-shadow 300ms ease, color 300ms ease, border-bottom 300ms ease; */
 }
-a[href]:hover, a[href]:focus {
-  text-decoration: underline;
-}
-a[href]:visited {
+a:visited {
   color: var(--goldenyellow);
+}
+a:hover, a:focus {
+  outline-offset: 0;
+  outline: double 5px #e4b067;
+  color: #1f190a;
+  background-color: #e4b067;
+  border-bottom: none;
 }

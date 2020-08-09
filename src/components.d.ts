@@ -13,6 +13,8 @@ export namespace Components {
     }
     interface LandingPage {
     }
+    interface SiteAbout {
+    }
     interface SiteHeader {
     }
     interface SiteRoot {
@@ -39,6 +41,12 @@ declare global {
         prototype: HTMLLandingPageElement;
         new (): HTMLLandingPageElement;
     };
+    interface HTMLSiteAboutElement extends Components.SiteAbout, HTMLStencilElement {
+    }
+    var HTMLSiteAboutElement: {
+        prototype: HTMLSiteAboutElement;
+        new (): HTMLSiteAboutElement;
+    };
     interface HTMLSiteHeaderElement extends Components.SiteHeader, HTMLStencilElement {
     }
     var HTMLSiteHeaderElement: {
@@ -61,6 +69,7 @@ declare global {
         "blog-page": HTMLBlogPageElement;
         "blog-post": HTMLBlogPostElement;
         "landing-page": HTMLLandingPageElement;
+        "site-about": HTMLSiteAboutElement;
         "site-header": HTMLSiteHeaderElement;
         "site-root": HTMLSiteRootElement;
         "site-routes": HTMLSiteRoutesElement;
@@ -74,6 +83,8 @@ declare namespace LocalJSX {
     }
     interface LandingPage {
     }
+    interface SiteAbout {
+    }
     interface SiteHeader {
     }
     interface SiteRoot {
@@ -84,6 +95,7 @@ declare namespace LocalJSX {
         "blog-page": BlogPage;
         "blog-post": BlogPost;
         "landing-page": LandingPage;
+        "site-about": SiteAbout;
         "site-header": SiteHeader;
         "site-root": SiteRoot;
         "site-routes": SiteRoutes;
@@ -96,6 +108,7 @@ declare module "@stencil/core" {
             "blog-page": LocalJSX.BlogPage & JSXBase.HTMLAttributes<HTMLBlogPageElement>;
             "blog-post": LocalJSX.BlogPost & JSXBase.HTMLAttributes<HTMLBlogPostElement>;
             "landing-page": LocalJSX.LandingPage & JSXBase.HTMLAttributes<HTMLLandingPageElement>;
+            "site-about": LocalJSX.SiteAbout & JSXBase.HTMLAttributes<HTMLSiteAboutElement>;
             "site-header": LocalJSX.SiteHeader & JSXBase.HTMLAttributes<HTMLSiteHeaderElement>;
             "site-root": LocalJSX.SiteRoot & JSXBase.HTMLAttributes<HTMLSiteRootElement>;
             "site-routes": LocalJSX.SiteRoutes & JSXBase.HTMLAttributes<HTMLSiteRoutesElement>;

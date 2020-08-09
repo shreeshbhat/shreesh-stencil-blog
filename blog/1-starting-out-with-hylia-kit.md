@@ -2,6 +2,7 @@
 title: Starting out with Hylia kit
 date: 2019-08-15 08:00:00
 tags: ['Blog']
+preview: Starting my blog with a Hylia starter template.
 ---
 A simple post to test out how a normal blog post looks on Hylia.
 <!--more-->

@@ -33,9 +33,6 @@ const AllPosts = ({ posts }: { posts: RenderedBlog[] }) => {
 
   return (
     <div class="blog-posts">
-      <hgroup class="blog-posts__heading">
-        <h2 class="blog-posts__title">Blog</h2>
-      </hgroup>
       {posts.map(p => <BlogPost post={p} single={false} />)}
     </div>
   )

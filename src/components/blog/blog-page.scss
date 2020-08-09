@@ -11,13 +11,20 @@ blog-page, blog-post {
   }
 
   h2 {
-    font-size: clamp(1.4rem, calc(0.5rem + 2vw), 2rem);
+    font-size: var(--h2-text-size);
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 10px;
+    line-height: 1.6;
+    a {
+      padding-bottom: 3px;
+      margin: 0;
+      font-weight: 700;
+      border-bottom: 3px solid currentColor;
+    }
   }
   a {
-    text-decoration: none;
+    border-bottom: 2px solid currentColor;
   }
 
   h1, h2, h3, h4 {
@@ -31,7 +38,7 @@ blog-page, blog-post {
 
 .blog-posts {
   margin: 0 auto;
-  padding-bottom: 96px;
+  padding-bottom: 70px;
   max-width: 830px;
 
   &__heading {
@@ -45,7 +52,7 @@ blog-page, blog-post {
     margin: 35px 25px;
   }
   &__title {
-    color: var(--light-grey);
+    color: var(--light-blue);
     font-size: 28px;
     font-weight: 600;
   }
@@ -53,11 +60,9 @@ blog-page, blog-post {
 
 .blog-post {
   color: var(--light-grey);
-  padding: 40px;
+  padding: 35px 40px;
   margin: 20px;
-
   background-color: var(--item-bg-color);
-
   border-radius: 4px;
   box-shadow: var(--elevation-2);
 
@@ -90,32 +95,37 @@ blog-page, blog-post {
 
   &__wrap {
     margin: 0 auto;
-    max-width: 830px;
+    max-width: min(60ch + 15vw, 830px);
   }
 
   &__description {
-    display: block;
-    margin: 10px 0;
+    display: inline-block;
+    font-size: var(--desc-text-size);
+    margin-bottom: 13px;
   }
 
   &__tag-wrap {
-    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__tag {
     margin-right: 10px;
-    background-color: var(--dark-pink);
-    padding: 4px 6px;
+    margin-bottom: 10px;
+    background-color: var(--dark-green);
+    font-size: var(--desc-text-size);
+    padding: 5px 10px;
     border-radius: 4px;
+    white-space: nowrap;
   }
 
   &__date {
-    margin-top: 10px;
+    font-size: var(--desc-text-size);
     margin-bottom: 20px;
   }
 
-  &__continue-reading {
-    display: block;
-    margin-top: 24px;
+  &__preview {
+    font-size: var(--code-text-size);
   }
 }

@@ -2,6 +2,7 @@
 title: Fluid design using clamp
 date: 2020-05-20 08:00:00
 tags: ['Today I learned', 'CSS']
+preview: Font size fluidity based on browser size and user preference is exciting.
 ---
 I came across css clamp function today while browsing [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp).
 <!--more-->

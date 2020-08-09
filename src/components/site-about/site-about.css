@@ -1,0 +1,13 @@
+site-about {
+  margin: 0 auto;
+  display: block;
+  max-width: min(85vw, 620px);
+}
+
+p {
+  font-size: var(--p-text-size);
+}
+
+a {
+  border-bottom: 2px solid currentColor;
+}
