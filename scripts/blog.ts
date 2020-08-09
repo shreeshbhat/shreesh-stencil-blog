@@ -62,18 +62,7 @@ async function buildPost(postFile: string): Promise<RenderedBlog> {
 
   const slug = slugify(data.attributes.title);
 
-  // // Use the "more" token system to generate a preview on the index page
-  // const MORE_TOKEN = '<!--more-->';
-  // const moreIndex = data.body.indexOf(MORE_TOKEN);
-  // const postPreview = moreIndex >= 0 ? data.body.slice(0, moreIndex) : '';
   const postBody = data.body;
-
-  // const parsedPreview = marked(postPreview, {
-  //   highlight: (code, lang) => Prism.highlight(code, Prism.languages[lang], lang as any)
-  // })
-  // // TODO: could support over vars but for now just replace $POST with the
-  // // final URL of the post
-  // .replace(/\$POST/g, `/blog/${slug}`);
 
   const parsedBody = marked(postBody, {
     highlight: (code, lang) => Prism.highlight(code, Prism.languages[lang], lang as any)
