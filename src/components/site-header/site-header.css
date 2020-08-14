@@ -4,7 +4,7 @@ header {
   align-self: stretch;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 4vw;
   background-color: var(--body-bg-color);
 }
 
@@ -35,7 +35,6 @@ h1 {
 .nav-item {
   display: inline-block;
   margin: auto;
-  margin-right: 4vw;
 }
 
 a {
