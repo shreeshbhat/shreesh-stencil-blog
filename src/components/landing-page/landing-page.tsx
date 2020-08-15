@@ -13,7 +13,7 @@ export class LandingPage {
       <Host>
         <MetaHead />
         <div class="image-wrapper">
-          <img class="profile-image" src="/assets/img/profile.svg" alt="An illustration of a standing person facing right wearing red jacket, white t-shirt, and blue jeans." />
+          <img class="profile-image" width="390" height="328" src="/assets/img/profile.svg" alt="An illustration of a standing person wearing red jacket, white t-shirt, and blue jeans." />
         </div>
         <div class="text-wrapper">
           <p>
