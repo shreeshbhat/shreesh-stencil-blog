@@ -7,7 +7,7 @@ import posts from '../../assets/blog.json';
 
 @Component({
   tag: 'blog-post',
-  styleUrl: 'blog-page.scss',
+  styleUrl: 'blog-page.css',
   shadow: false
 })
 export class BlogPage {

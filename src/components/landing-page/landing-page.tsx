@@ -1,10 +1,9 @@
 import { Component, h, Host, State } from '@stencil/core';
 import Helmet from '@stencil/helmet';
-// import FancyUnderline from '../FancyUnderline';
 
 @Component({
   tag: 'landing-page',
-  styleUrl: 'landing-page.scss'
+  styleUrl: 'landing-page.css'
 })
 export class LandingPage {
   @State() selectedCodeTab: string = 'notifications' ;

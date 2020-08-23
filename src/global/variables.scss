@@ -1,44 +1,16 @@
-$color-blue-primary: #4cafff;
-$color-blue-muted: #85adce;
-$color-yellow: #fdbf00;
-$color-yellow-contrast: #653d00;
-$color-white: #fff;
-
-$link-color: #1d9aff;
-
-$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
-
 :root {
-  --blue: #119eff;
-  --button-background: var(--blue);
   --goldenyellow: #fedb8b;
-  --woodsmoke: #16161d;
-  --dolphin: #626177;
-  --gunpowder: #505061;
-  --manatee: #8888a2;
-  --cadet-blue: #abb2bf;
-  --whisper: #ebebf7;
-  --selago: #f4f4fd;
-  --white-lilac: #f8f8fc;
   --white: #fff;
   --slate: #262727;
   --grey-blue: #73849a;
-  --light-brown: #6f665c;
   --light-grey: #e0e0e0;
   --light-blue: #8bb8df;
   --dark-blue: #2b2f33;
   --dark-pink: #99003b;
   --dark-green: #2d494e;
-
-  --dodger-blue: #1d9aff;
-  --dodger-blue-hover: rgba(#1d9aff, 0.2);
-
-  --old-lace: #fdf5e4;
-  --wheatfield: #f1e3c5;
-  --pirate-gold: #9a6400;
+  --light-green: #25b182;
 
   --button-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
   --button-shadow-hover: 0 4px 6px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.08);
-
   --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 }
